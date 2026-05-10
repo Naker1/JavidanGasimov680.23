@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SoftLoad Hub | Каталог программ</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="SoftLoad Hub"><span class="brand__logo">SL</span><span class="brand__name">SoftLoad Hub</span></a>
+    <button class="menu-toggle" type="button" aria-label="Открыть меню" aria-expanded="false"><span></span><span></span><span></span></button>
+    <nav class="navbar" aria-label="Основная навигация">
+      <a href="index.html">Главная</a><a class="active" href="software.html">Каталог программ</a><a href="about.html">О системе</a><a href="contact.html">Контакты</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-title">
+      <p class="eyebrow">Каталог</p>
+      <h1>Проверенное программное обеспечение для быстрой загрузки</h1>
+      <p>Найдите инструмент для защиты, разработки, офисной работы или облачной синхронизации. Каждая карточка содержит категорию, версию, размер файла и действия для пользователя.</p>
+    </section>
+
+    <section class="catalog-tools" aria-label="Поиск и фильтрация">
+      <input id="programSearch" type="search" placeholder="Поиск по названию программы">
+      <div class="filter-buttons">
+        <button class="filter-btn active" type="button" data-filter="all">Все</button>
+        <button class="filter-btn" type="button" data-filter="security">Безопасность</button>
+        <button class="filter-btn" type="button" data-filter="development">Разработка</button>
+        <button class="filter-btn" type="button" data-filter="office">Офис</button>
+        <button class="filter-btn" type="button" data-filter="cloud">Облако</button>
+      </div>
+    </section>
+
+    <section class="software-grid catalog-grid" id="softwareList">
+      <article class="software-card" data-category="security" data-name="SecureDesk Pro"><div class="software-card__icon">◎</div><h2>SecureDesk Pro</h2><p>Защита устройств, проверка угроз и безопасное обновление сигнатур.</p><p><strong>Категория:</strong> Безопасность</p><p><strong>Версия:</strong> 5.4.1</p><p><strong>Размер:</strong> 148 МБ</p><div class="card-actions"><button class="btn btn--primary animated-btn" type="button">Скачать</button><button class="btn btn--ghost animated-btn" type="button">Подробнее</button></div></article>
+      <article class="software-card" data-category="development" data-name="DevStudio Lite"><div class="software-card__icon">▣</div><h2>DevStudio Lite</h2><p>Среда разработки для учебных, веб- и корпоративных проектов.</p><p><strong>Категория:</strong> Разработка</p><p><strong>Версия:</strong> 2.9.0</p><p><strong>Размер:</strong> 410 МБ</p><div class="card-actions"><button class="btn btn--primary animated-btn" type="button">Скачать</button><button class="btn btn--ghost animated-btn" type="button">Подробнее</button></div></article>
+      <article class="software-card" data-category="office" data-name="OfficeFlow Suite"><div class="software-card__icon">▤</div><h2>OfficeFlow Suite</h2><p>Пакет для документов, таблиц, презентаций и совместной работы.</p><p><strong>Категория:</strong> Офис</p><p><strong>Версия:</strong> 11.2.3</p><p><strong>Размер:</strong> 265 МБ</p><div class="card-actions"><button class="btn btn--primary animated-btn" type="button">Скачать</button><button class="btn btn--ghost animated-btn" type="button">Подробнее</button></div></article>
+      <article class="software-card" data-category="cloud" data-name="CloudSync Drive"><div class="software-card__icon">⌁</div><h2>CloudSync Drive</h2><p>Синхронизация файлов, резервное копирование и общий доступ.</p><p><strong>Категория:</strong> Облако</p><p><strong>Версия:</strong> 4.0.8</p><p><strong>Размер:</strong> 96 МБ</p><div class="card-actions"><button class="btn btn--primary animated-btn" type="button">Скачать</button><button class="btn btn--ghost animated-btn" type="button">Подробнее</button></div></article>
+      <article class="software-card" data-category="development" data-name="API Monitor"><div class="software-card__icon">◇</div><h2>API Monitor</h2><p>Отладка запросов, логирование ответов и контроль интеграций.</p><p><strong>Категория:</strong> Разработка</p><p><strong>Версия:</strong> 1.7.5</p><p><strong>Размер:</strong> 72 МБ</p><div class="card-actions"><button class="btn btn--primary animated-btn" type="button">Скачать</button><button class="btn btn--ghost animated-btn" type="button">Подробнее</button></div></article>
+      <article class="software-card" data-category="office" data-name="PDF Master"><div class="software-card__icon">▧</div><h2>PDF Master</h2><p>Редактирование, подпись, сжатие и защита PDF-документов.</p><p><strong>Категория:</strong> Офис</p><p><strong>Версия:</strong> 8.1.2</p><p><strong>Размер:</strong> 118 МБ</p><div class="card-actions"><button class="btn btn--primary animated-btn" type="button">Скачать</button><button class="btn btn--ghost animated-btn" type="button">Подробнее</button></div></article>
+      <article class="software-card" data-category="security" data-name="PatchGuard Agent"><div class="software-card__icon">◈</div><h2>PatchGuard Agent</h2><p>Контроль обновлений, инвентаризация версий и отчеты по рискам.</p><p><strong>Категория:</strong> Безопасность</p><p><strong>Версия:</strong> 3.3.6</p><p><strong>Размер:</strong> 84 МБ</p><div class="card-actions"><button class="btn btn--primary animated-btn" type="button">Скачать</button><button class="btn btn--ghost animated-btn" type="button">Подробнее</button></div></article>
+      <article class="software-card" data-category="cloud" data-name="Backup Node"><div class="software-card__icon">▱</div><h2>Backup Node</h2><p>Локальные и облачные резервные копии с расписанием и журналом.</p><p><strong>Категория:</strong> Облако</p><p><strong>Версия:</strong> 6.0.1</p><p><strong>Размер:</strong> 132 МБ</p><div class="card-actions"><button class="btn btn--primary animated-btn" type="button">Скачать</button><button class="btn btn--ghost animated-btn" type="button">Подробнее</button></div></article>
+    </section>
+    <p class="empty-state" id="emptyState">Программы по выбранным параметрам не найдены.</p>
+
+    <section class="cta-block">
+      <div><p class="eyebrow">Не нашли нужное ПО?</p><h2>Отправьте запрос, и команда SoftLoad Hub подготовит карточку для нового продукта.</h2></div>
+      <a class="btn btn--primary animated-btn" href="contact.html">Связаться</a>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-main">
+      <div class="footer-brand"><a class="brand" href="index.html"><span class="brand__logo">SL</span><span class="brand__name">SoftLoad Hub</span></a><p>Платформа для безопасной публикации, проверки и онлайн-загрузки программного обеспечения.</p><div class="social-links"><a href="#">TG</a><a href="#">IN</a><a href="#">GH</a></div></div>
+      <div class="footer-column"><h3>Quick links</h3><a href="index.html">Главная</a><a href="software.html">Каталог программ</a><a href="about.html">О системе</a><a href="contact.html">Контакты</a></div>
+      <div class="footer-column"><h3>Контакты</h3><p>28 May, Baku, Azerbaijan</p><p>+994 12 310 28 28</p><p>support@softloadhub.az</p></div>
+      <form class="newsletter-form"><h3>Newsletter</h3><p>Подпишитесь на новости каталога и обновления безопасности.</p><div><input type="email" placeholder="Ваш email"><button class="btn btn--primary animated-btn" type="submit">Подписаться</button></div></form>
+    </div>
+    <div class="footer-bottom"><p>© 2026 SoftLoad Hub. Все права защищены.</p><p>Политика безопасности · Условия использования</p></div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
